@@ -1,0 +1,27 @@
+
+.wrapper__link {
+    display: flex;
+    flex: 1 0 20rem;
+    justify-content: flex-end;
+    grid-column: 1/-1;
+}
+
+.wrapper__link--button {
+    display: block;
+    background: var(--light-black);
+    color: var(--light-background);
+    margin: var(--padding) var(--padding);
+    padding: var(--padding);
+    border-radius: var(--box-radius);
+    box-shadow: var(--box-shadow);
+    text-decoration: none;
+    
+    transition: all 500ms ease-out;
+}
+
+.wrapper__link--button:hover {
+    background: var(--light-secondary);
+    letter-spacing: 1px;
+}
+
+

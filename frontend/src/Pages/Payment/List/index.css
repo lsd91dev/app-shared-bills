@@ -1,0 +1,35 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper__title {
+    grid-column: 1/-1;
+    margin: 0rem 5rem;
+}
+
+
+.list__wrapper {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap: var(--padding);
+    gap: var(--padding);
+    grid-column: 1/-1;
+    margin: var(--padding) var(--padding);
+}
+
+@media (max-width: 525px){
+    /* .list__wrapper {
+        grid-column: 1/-1;
+        margin: var(--padding) var(--padding);
+    } */
+}
+
+@media (max-width: 375px){
+    .wrapper__title {
+        justify-self: center;
+        margin: 0;
+    }
+}

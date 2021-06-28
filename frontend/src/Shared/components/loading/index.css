@@ -1,0 +1,45 @@
+.loading {
+    animation: fadeIn 500ms;
+    position: fixed;
+    inset: 0;
+    background: rgb(0,0,0,0.5);
+}
+
+.loading__box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 2rem;
+    background: rgb(255,255,255);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.loading__text {
+    font-size: 1.5rem;
+}
+
+.blink-text {
+    animation: blink 750ms infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    75% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+

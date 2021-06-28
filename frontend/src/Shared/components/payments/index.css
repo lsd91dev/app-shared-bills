@@ -1,0 +1,16 @@
+.list__payment {
+    padding: var(--padding);
+    background: var(--light-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--box-radius);
+    grid-column: 1/5;
+    margin: 0 var(--padding);
+}
+
+@media (max-width: 590px ){
+    .list__payment {
+        grid-column: 1/-1;
+    }
+}
+
+

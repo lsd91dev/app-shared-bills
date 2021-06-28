@@ -1,0 +1,35 @@
+.list__item {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.list__link {
+    display: block;
+    padding: var(--padding);
+    background: var(--light-secondary);
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 500ms ease-out;
+}
+
+.list__link:hover {
+    letter-spacing: 1px;
+    background: var(--light-black);
+
+}
+
+.list__group-field {
+    margin: var(--padding) 0;
+}
+
+.list__field {
+        font-size: 18px;
+        font-weight: bold;
+}
+
+.list__field--name {
+    margin: 0rem var(--padding);
+}

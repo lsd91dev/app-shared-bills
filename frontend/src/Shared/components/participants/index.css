@@ -1,0 +1,14 @@
+.list__participant {
+    padding: var(--padding);
+    background: var(--light-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--box-radius);
+    grid-column: 5/-1;
+    margin: var(--padding) 0;
+}
+
+@media (max-width: 590px ){
+    .list__participant {
+        grid-column: 1/-1;
+    }
+}
